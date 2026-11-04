@@ -26,4 +26,4 @@ WordPress developers who want to see how a real block theme is put together, wit
 
 ## License
 
-GPL v3 or later. Parts of the code, CSS and templates are derived from [Ollie  ↗](https://olliewp.com) by Mike McAlister (GPL v3 or later). Eric Slider: MIT.
+GPL v3 or later. Parts of the code, CSS and templates are partly derived from [Ollie  ↗](https://olliewp.com) by Mike McAlister (GPL v3 or later). Eric Slider: MIT.
