@@ -10,7 +10,7 @@ A lean, build-free WordPress block theme (FSE), the one running ericroth.org. No
 
 **What makes it genuinely stand out**
 
-Most block themes are either polished demo themes built to sell or empty starter kits. This one is the production theme of a live site (this one!), shared as it is, so every rule exists because a real page needed it. The theme owns layout, design tokens and CSS, while everything dynamic lives in separate, documented code snippets. Performance comes from structure, not plugins: Per-block stylesheets load only on pages that use that block, and system fonts mean zero font requests. The CSS is readable, with a reset base layer (derived from Ollie) and a site layer with a table of contents and stated conventions. There’s no build step: Upload the zip and it runs.
+Most block themes are either polished demo themes built to sell or empty starter kits. This one is the production theme of a live site (this one!), shared as it is, so every rule exists because a real page needed it. The theme owns layout, design tokens and CSS, while everything dynamic lives in separate, documented code snippets. Performance comes from structure, not plugins: Per-block stylesheets load only on pages that use that block, and system fonts mean zero font requests. The CSS is readable, with a reset base layer and a site layer with a table of contents and stated conventions. There’s no build step: Upload the zip and it runs.
 
 **Who would actually reach for it**
 
@@ -18,7 +18,9 @@ WordPress developers who want to see how a real block theme is put together, wit
 
 ---
 
-**Get it here:** [Eric Theme](https://github.com/ericrothdotorg/website-lab/tree/main/eric-theme)
+## Get it here
+
+[Eric Theme](https://github.com/ericrothdotorg/website-lab/tree/main/eric-theme)
 
 ---
 
@@ -29,17 +31,6 @@ This is the theme of one particular site, shared as it is. Use it, take it apart
 - **Theme only:** Installs and runs, but the shortcodes above show as plain text and much of the look is missing.
 - **The full picture:** Add the Display Posts plugin and the snippets, at least *Eric Companion PHP* and *CSS*, *Display Posts – Bill Erickson* and *CPTs & Taxonomies* (the custom post types the archive templates expect).
 - **Menu:** The header points to a navigation menu of this site. On yours, pick your own menu for the Navigation block in the Site Editor.
-
----
-
-## Install
-
-1. Download **eric-x.y.z.zip** from [Releases](https://github.com/ericrothdotorg/website-lab/releases).
-2. WordPress: Appearance → Themes → Add New Theme → Upload Theme → choose the zip → Install Now.
-
-Don't use the green **Code → Download ZIP** button for this: it downloads the whole repository, and the theme would end up in the wrong folder.
-
-**Requires:** WordPress 7.0 or later, PHP 8.0 or later.
 
 ---
 
