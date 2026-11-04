@@ -4,7 +4,7 @@
 
 A lean, build-free WordPress block theme (FSE), the one running ericroth.org. No page builder, no framework, no webfonts: Templates, theme.json and plain CSS that loads only what a page actually uses.
 
-**Tags:** eric-theme, wordpress, block-theme, fse, eric-snippets, eric-slider
+**Tags:** eric-theme, wordpress, block-theme, fse, eric-snippets, eric-slider, website-lab
 
 ---
 
@@ -25,8 +25,8 @@ The theme is one of four parts. On its own it gives the layout, the design token
 | Part | Where | What it brings |
 |---|---|---|
 | **Eric theme** | This repository | Templates, template parts, theme.json, style.css (Part A base, Part B site), per-block CSS in `assets/styles/`, the mobile-menu submenu fix |
-| **Code snippets** | [eric-snippets/snippets](https://github.com/ericrothdotorg/eric-snippets/tree/main/snippets) | The shortcodes the templates use, the fixed header bar, Eric Companion CSS, custom post types, quotes, stats and more. Run with [Code Snippets  ↗](https://wordpress.org/plugins/code-snippets/) |
-| **Eric Slider** | Standalone: [eric-slider](https://github.com/ericrothdotorg/eric-slider); on the site its files sit in the theme's `assets/eric-slider/` folder, already included in the release zip | Sliders and carousels (loaded by the snippet *Eric Slider & Animate*) |
+| **Eric Snippets** | [eric-snippets/snippets](https://github.com/ericrothdotorg/eric-snippets/tree/main/snippets) | The shortcodes the templates use, the fixed header bar, Eric Companion CSS, custom post types, quotes, stats and more |
+| **Eric Slider** | Standalone: [eric-slider](https://github.com/ericrothdotorg/eric-slider); on the site its files sit in the theme's `assets/eric-slider/` folder, already included in the release zip | Sliders and carousels (loaded by `eric-slider-animate.php` from the eric-slider repo) |
 | **Display Posts** | [Plugin by Bill Erickson  ↗](https://displayposts.com/) | The `[display-posts]` listings in the templates |
 
 Shortcodes in the templates and where they come from:
