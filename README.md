@@ -1,7 +1,7 @@
 # eric-theme
 A lean, build-free WordPress block theme (FSE), the one running ericroth.org. No page builder, no framework, no webfonts: Templates, theme.json and plain CSS that loads only what a page actually uses.
-**Tags:** slider, carousel, javascript, vanilla-js, wordpress, fade, autoplay, responsive, accessible, zero-dependency
 
+**Tags:** wordpress, block-theme, fse, website-lab, eric-slider
 ---
 
 **What makes it genuinely stand out**
