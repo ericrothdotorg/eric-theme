@@ -4,7 +4,7 @@
 
 A lean, build-free WordPress block theme (FSE), the one running ericroth.org. No page builder, no framework, no webfonts: Templates, theme.json and plain CSS that loads only what a page actually uses.
 
-**Tags:** wordpress, block-theme, fse, website-lab, eric-slider
+**Tags:** wordpress, block-theme, fse, eric-snippets, eric-slider
 
 ---
 
@@ -25,7 +25,7 @@ The theme is one of four parts. On its own it gives the layout, the design token
 | Part | Where | What it brings |
 |---|---|---|
 | **Eric theme** | This repository | Templates, template parts, theme.json, style.css (Part A base, Part B site), per-block CSS in `assets/styles/`, the mobile-menu submenu fix |
-| **Code snippets** | [website-lab/snippets](https://github.com/ericrothdotorg/website-lab/tree/main/snippets) | The shortcodes the templates use, the fixed header bar, Eric Companion CSS, custom post types, quotes, stats and more. Run with [Code Snippets  ↗](https://wordpress.org/plugins/code-snippets/) |
+| **Code snippets** | [eric-snippets/snippets](https://github.com/ericrothdotorg/eric-snippets/tree/main/snippets) | The shortcodes the templates use, the fixed header bar, Eric Companion CSS, custom post types, quotes, stats and more. Run with [Code Snippets  ↗](https://wordpress.org/plugins/code-snippets/) |
 | **Eric Slider** | Standalone: [eric-slider](https://github.com/ericrothdotorg/eric-slider); on the site its files sit in the theme's `assets/eric-slider/` folder, already included in the release zip | Sliders and carousels (loaded by the snippet *Eric Slider & Animate*) |
 | **Display Posts** | [Plugin by Bill Erickson  ↗](https://displayposts.com/) | The `[display-posts]` listings in the templates |
 
@@ -33,8 +33,8 @@ Shortcodes in the templates and where they come from:
 
 | Shortcode | Snippet |
 |---|---|
-| `[er_hero]`, `[er_breadcrumbs]`, `[er_cpt_archive]`, `[er_post_footer]`, `[er_related_posts]`, `[er_socials_support]` | [`snippets/overall/eric-companion.php`](https://github.com/ericrothdotorg/website-lab/blob/main/snippets/overall/eric-companion.php) |
-| `[er_cached]` | [`snippets/overall/display-posts-bill-erickson.php`](https://github.com/ericrothdotorg/website-lab/blob/main/snippets/overall/display-posts-bill-erickson.php) |
+| `[er_hero]`, `[er_breadcrumbs]`, `[er_cpt_archive]`, `[er_post_footer]`, `[er_related_posts]`, `[er_socials_support]` | [`snippets/overall/eric-companion.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/eric-companion.php) |
+| `[er_cached]` | [`snippets/overall/display-posts-bill-erickson.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/display-posts-bill-erickson.php) |
 | `[display-posts]` | Display Posts plugin |
 
 ---
