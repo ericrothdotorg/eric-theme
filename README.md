@@ -33,8 +33,8 @@ Shortcodes in the templates and where they come from:
 
 | Shortcode | Snippet |
 |---|---|
-| `[er_hero]`, `[er_breadcrumbs]`, `[er_cpt_archive]`, `[er_post_footer]`, `[er_related_posts]`, `[er_socials_support]` | [`snippets/overall/eric-companion.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/eric-companion.php) |
-| `[er_cached]` | [`snippets/overall/display-posts-bill-erickson.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/display-posts-bill-erickson.php) |
+| `[er_hero]`, `[er_breadcrumbs]`, `[er_cpt_archive]`, `[er_post_footer]`, `[er_related_posts]`, `[er_socials_support]` | `[snippets/overall/eric-companion.php]`(https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/eric-companion.php) |
+| `[er_cached]` | `[snippets/overall/display-posts-bill-erickson.php]`(https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/display-posts-bill-erickson.php) |
 | `[display-posts]` | Display Posts plugin |
 
 ---
