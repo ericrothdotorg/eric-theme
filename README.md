@@ -20,7 +20,7 @@ WordPress developers who want to see how a real block theme is put together, wit
 
 ## Get it here
 
-[Eric Theme](https://github.com/ericrothdotorg/website-lab/tree/main/eric-theme)
+- [Eric Theme](https://github.com/ericrothdotorg/website-lab/tree/main/eric-theme)
 
 ---
 
