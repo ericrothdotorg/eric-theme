@@ -29,14 +29,16 @@ The theme is one of four parts. On its own it gives the layout, the design token
 | **Eric Slider** | Standalone: [eric-slider](https://github.com/ericrothdotorg/eric-slider); on the site its files sit in the theme's `assets/eric-slider/` folder, already included in the release zip | Sliders and carousels (loaded by `eric-slider-animate.php` from the eric-slider repo) |
 | **Display Posts** | [Plugin by Bill Erickson  ↗](https://displayposts.com/) | The `[display-posts]` listings in the templates |
 
-Shortcodes in the templates and where they come from:
+### Required shortcodes
 
-| Shortcode | Snippet |
+The templates and template parts use these shortcodes. If the snippet or plugin that provides one isn't active, its raw shortcode text shows on the page instead.
+
+| Shortcode | Source |
 |---|---|
 | `[er_hero]`, `[er_breadcrumbs]`, `[er_cpt_archive]`, `[er_post_footer]`, `[er_related_posts]`, `[er_socials_support]` | [`snippets/overall/eric-companion.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/eric-companion.php) |
 | `[er_cached]` | [`snippets/overall/display-posts-bill-erickson.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/display-posts-bill-erickson.php) |
 | `[post_stats]`, `[total_post]`, `[total_my_interests]`, `[reusable]`, `[merged_tag_cloud]` | [`snippets/overall/site-essentials-cookies.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/site-essentials-cookies.php) |
-| `[display-posts]` | Display Posts plugin |
+| `[display-posts]` | [Display Posts](https://wordpress.org/plugins/display-posts-shortcode/) plugin |
 
 ---
 
