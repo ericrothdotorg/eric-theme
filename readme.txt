@@ -38,9 +38,9 @@ Own block theme for ericroth.org.
 Eric WordPress Theme, (C) 2026 Eric Roth
 Eric is distributed under the terms of the GNU GPL v3 or later.
 
-Eric Slider (https://github.com/ericrothdotorg/eric-slider), (C) Eric Roth, MIT.
-
 Parts of the code, CSS and templates are derived from Ollie
 (https://olliewp.com), (C) Mike McAlister, GPL v3 or later.
 
 animate.css (https://animate.style), (C) Daniel Eden, MIT.
+
+Eric Slider (https://github.com/ericrothdotorg/eric-slider), (C) Eric Roth, MIT.
