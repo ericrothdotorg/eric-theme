@@ -38,7 +38,7 @@ The templates and template parts use these shortcodes. If the snippet or plugin 
 | `[er_hero]`, `[er_breadcrumbs]`, `[er_cpt_archive]`, `[er_post_footer]`, `[er_related_posts]`, `[er_socials_support]` | [`snippets/overall/eric-companion.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/eric-companion.php) |
 | `[er_cached]` | [`snippets/overall/display-posts-bill-erickson.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/display-posts-bill-erickson.php) |
 | `[post_stats]`, `[total_post]`, `[total_my_interests]`, `[reusable]`, `[merged_tag_cloud]` | [`snippets/overall/site-essentials-cookies.php`](https://github.com/ericrothdotorg/eric-snippets/blob/main/snippets/overall/site-essentials-cookies.php) |
-| `[display-posts]` | [Display Posts](https://wordpress.org/plugins/display-posts-shortcode/) plugin |
+| `[display-posts]` | [Display Posts  ↗](https://displayposts.com/) plugin |
 
 ---
 
