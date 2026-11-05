@@ -65,4 +65,4 @@ Don't use the green **Code → Download ZIP** button for this: it downloads the 
 
 ## License
 
-GPL v3 or later. Parts of the code, CSS and templates are partly derived from [Ollie  ↗](https://olliewp.com) by Mike McAlister (GPL v3 or later). Eric Slider: MIT.
+GPL v3 or later. Parts of the code, CSS and templates are derived from [Ollie ↗](https://olliewp.com) by Mike McAlister (GPL v3 or later). Bundled: [animate.css ↗](https://animate.style) 4.1.0 by Daniel Eden (MIT). Eric Slider: MIT.
