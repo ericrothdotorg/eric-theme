@@ -186,6 +186,12 @@ label {
 	--er-link:       var(--color-1);
 	--er-link-hover: var(--color-2);
 
+	/* Text accent colours: light set by default, switched to the dark set in dark contexts (section 3).
+	   Each reaches 5:1 on its background. For text that should stand out from body text, links and headings. */
+	--er-orange: #b44e09;
+	--er-green:  #1a7c4b;
+	--er-purple: #8c4dcb;
+
 	/* Accessibility focus ring */
 	--a11y-focus-color:  var(--color-1);
 	--a11y-focus-width:  1px;
@@ -253,14 +259,23 @@ body.dark-mode :is(h1, h2, h3, h4, h5, h6) {
    3. BASE
    ============================================================ */
 
-/* ---- Links ----
-   Dark contexts switch the link pair to --color-11 / --color-12 (4.5:1 on dark backgrounds).
+/* ---- Links + text accents ----
+   Dark contexts switch the link pair to --color-11 / --color-12 (4.5:1 on dark backgrounds)
+   and the accents to their dark set (5:1 on dark backgrounds).
    :where() keeps everything at 0-0-1, so link colours set on a block in the editor still win;
    :visited is included so visited links keep the context colour. */
-:where(body.dark-mode, footer.wp-block-template-part, #cookie-notice, .er-hero-section.has-background-dim, .er-header) {
+:where(body.dark-mode, footer.wp-block-template-part, #cookie-notice, .er-hero-section.has-background-dim, .er-header, .wp-block-group.er-cover-host) {
 	--er-link: var(--color-11);
 	--er-link-hover: var(--color-12);
+	--er-orange: #e0610c;
+	--er-green:  #219b5e;
+	--er-purple: #a371d6;
 }
+
+/* Core preset "Luminous vivid orange" (text colour on a few paragraphs in posts) shows the site's
+   text orange, so it is readable and switches on dark backgrounds. body + !important beats core's rule. */
+body .has-luminous-vivid-orange-color {color: var(--er-orange) !important;}
+
 a:where(:link, :visited) {font-weight: bold; color: var(--er-link);}
 a:where(:link:hover, :visited:hover) {color: var(--er-link-hover);}
 a:focus {outline: var(--a11y-focus-width) solid var(--a11y-focus-color); outline-offset: var(--a11y-focus-offset);}
@@ -513,12 +528,11 @@ body.dark-mode option {
    ============================================================ */
 
 .wp-block-quote {position: relative; width: 85%; max-width: fit-content; margin: 35px auto 70px; padding: 0 25px; border-inline-start: 3px solid var(--color-5) !important; border-right: 3px solid var(--color-5) !important; border-radius: 10px; font-size: var(--wp--preset--font-size--medium); font-weight: 500;}
-.wp-block-quote p, .wp-block-quote ul, .wp-block-quote li {text-align: justify; hyphens: manual; font-family: var(--er-ff-quote); font-style: italic; color: #2c8357; line-height: var(--er-lh-loose);} /* No var Color - 4.5:1 on --color-7 */
+.wp-block-quote p, .wp-block-quote ul, .wp-block-quote li {text-align: justify; hyphens: manual; font-family: var(--er-ff-quote); font-style: italic; color: var(--er-green); line-height: var(--er-lh-loose);}
 .wp-block-quote p, .wp-block-quote ul, .wp-block-quote li {font-size: var(--er-fs-body);}
 .wp-block-quote cite {position: absolute; top: calc(100% - 1.25em); right: 30px; font-family: var(--er-ff-cite); font-size: var(--er-fs-cite); font-style: normal; color: var(--color-9);}
 :root :where(.is-layout-flow) > :last-child.wp-block-quote {margin-block-end: 25px;}
 body.dark-mode .wp-block-quote {border-inline-start: 3px solid var(--color-3) !important; border-right: 3px solid var(--color-3) !important;}
-body.dark-mode .wp-block-quote p, body.dark-mode .wp-block-quote ul, body.dark-mode .wp-block-quote li {color: #339966;} /* No var Color */
 
 /* ============================================================
    9. PULLQUOTE  (green Georgia)
@@ -532,7 +546,7 @@ body.dark-mode .wp-block-quote p, body.dark-mode .wp-block-quote ul, body.dark-m
 figure.wp-block-pullquote {position: relative; max-width: fit-content; margin-inline: 0; background: var(--color-8); border: 1px solid var(--color-5); border-radius: 25px; padding: 25px 25px 5px;}
 body.dark-mode figure.wp-block-pullquote {background: var(--color-10); border: 1px solid var(--color-4);}
 .wp-block-pullquote blockquote {border-inline-start: none !important; padding-bottom: 1em;}
-.wp-block-pullquote blockquote p, .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {margin-left: 25px; text-align: left; hyphens: manual; font-family: var(--er-ff-quote); font-style: italic; color: #339966; line-height: var(--er-lh-loose);} /* No var Color */
+.wp-block-pullquote blockquote p, .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {margin-left: 25px; text-align: left; hyphens: manual; font-family: var(--er-ff-quote); font-style: italic; color: var(--er-green); line-height: var(--er-lh-loose);}
 .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {margin-left: 0;} /* lists: no extra left margin, bullets already indent */
 .wp-block-pullquote blockquote p, .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {font-size: var(--wp--preset--font-size--medium);} /* core/pullquote size = medium (1.65rem), pinned here on purpose */
 .wp-block-pullquote blockquote cite {display: block; text-align: right; margin-top: 0.75em; margin-right: 25px; font-family: var(--er-ff-cite); font-size: var(--er-fs-cite); font-style: normal;}
