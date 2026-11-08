@@ -15,20 +15,6 @@ Own block theme for ericroth.org.
 
 == Changelog ==
 
-= 1.1.2 =
-* Header: the search button opens a search field under the bar (native popover: toggle, Esc, click outside, no JavaScript) instead of linking to the Site Overview page.
-* Mobile overlay: background colour from the palette (--color-10) instead of a hardcoded value.
-
-= 1.1.1 =
-* Fix: style.css loads after the global styles again (as in 1.0.0), so its rules win over theme.json's :root :where() rules again (e.g. quotes centred). The mobile-submenu CSS is now appended to style.css.
-
-= 1.1.0 =
-* Removed base CSS that never takes effect on the site (overridden everywhere, or for block styles and helper classes the site doesn't offer).
-* Code and preformatted blocks now use the monospace font (broken font-family value fixed).
-* Mobile menu: one submenu fix instead of two (functions.php keeps aria-expanded correct per submenu).
-* Removed the inline "hide last separator" style; no page uses a post list.
-* Comments cleaned up.
-
 = 1.0.0 =
 * Initial release.
 
