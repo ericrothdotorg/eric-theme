@@ -14,7 +14,7 @@ Most block themes are either polished demo themes built to sell or empty starter
 
 **Who would actually reach for it**
 
-WordPress developers who want to see how a real block theme is put together, without a bundler, a page builder or a pile of unused patterns. It installs and runs on its own; add the companion snippets and the Display Posts plugin for the full look. As a readable, honest reference to learn from, borrow from or take apart, it fills a gap that polished commercial themes don’t.
+WordPress developers who want to see how a real block theme is put together, without a bundler, a page builder or a pile of unused patterns. It installs and runs on its own; add the companion [snippets](https://github.com/ericrothdotorg/eric-snippets) and the [Display Posts  ↗](https://displayposts.com/) plugin for the full look. As a readable, honest reference to learn from, borrow from or take apart, it fills a gap that polished commercial themes don’t.
 
 ---
 
