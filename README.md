@@ -46,9 +46,9 @@ The templates and template parts use these shortcodes. If the snippet or plugin 
 
 This is the theme of one particular site, shared as it is. Use it, take it apart, borrow what you like.
 
-- **Theme only:** Installs and runs, but the shortcodes above show as plain text and much of the look is missing.
-- **The full picture:** Add the Display Posts plugin and the snippets, at least *Eric Companion PHP* and *CSS*, *Display Posts – Bill Erickson* and *CPTs & Taxonomies* (the custom post types the archive templates expect).
-- **Menu:** The header points to a navigation menu of this site. On yours, pick your own menu for the Navigation block in the Site Editor.
+- **Start with the theme:** Upload it and it runs. Layout, design tokens and CSS are all there, ready to explore or build on. Shortcodes from the snippets show as plain text until you add them. Footer and sidebar still carry this site's links and images, so swap in your own.
+- **Get the full picture:** Add the [Display Posts  ↗](https://displayposts.com/) plugin and a few [snippets](https://github.com/ericrothdotorg/eric-snippets): *"Eric Companion PHP"*, *"Eric Companion CSS"*, *"Display Posts - Bill Erickson"*, *"Site Essentials & Cookies"* and *"CPTs & Taxonomies"*. That brings in the heroes, archives, related posts and the custom post types.
+- **Make it yours:** Pick your own menu for the Navigation block in the Site Editor and set a static front page under Settings → Reading.
 
 ---
 
