@@ -57,7 +57,7 @@ This is the theme of one particular site, shared as it is. Use it, take it apart
 1. Download **eric.zip** from the latest release under [Releases](https://github.com/ericrothdotorg/eric-theme/releases).
 2. WordPress: Appearance → Themes → Add New Theme → Upload Theme → choose the zip → Install Now.
 
-Don't use the green **Code → Download ZIP** button for this: it downloads the repository without the Eric Slider files, and the theme would end up in a folder named after the repository instead of `eric`.
+Don't use the green **Code → Download ZIP** button for this: It downloads the repository without the Eric Slider files, and the theme would end up in a folder named after the repository instead of `eric`.
 
 **Requires:** WordPress 7.0 or later, PHP 8.0 or later.
 
