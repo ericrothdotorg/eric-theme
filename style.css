@@ -280,6 +280,8 @@ body.dark-mode :is(h1, h2, h3, h4, h5, h6) {
 /* Core preset "Luminous vivid orange" (text colour on a few paragraphs in posts) shows the site's
    text orange, so it is readable and switches on dark backgrounds. body + !important beats core's rule. */
 body .has-luminous-vivid-orange-color {color: var(--er-orange) !important;}
+/* Same for "Brand" (primary, = --color-1): the link blue, lighter in dark contexts (core's #1e73be is ~4:1 there). */
+body .has-primary-color {color: var(--er-link) !important;}
 
 a:where(:link, :visited) {font-weight: bold; color: var(--er-link);}
 a:where(:link:hover, :visited:hover) {color: var(--er-link-hover);}
