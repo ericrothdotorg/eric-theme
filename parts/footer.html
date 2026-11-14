@@ -1,28 +1,26 @@
 <!-- wp:html -->
 
-<!-- TOP ROW: breadcrumbs left, Site Overview + Site Reach + Site Journey right; on narrow screens they wrap
-     under the breadcrumbs (Eric Companion CSS: .er-footer-toprow). Breadcrumbs: same [er_breadcrumbs]
-     as the hero. The links: the same classes as Socials / Support, so they look the same. -->
-
-<div class="er-footer-toprow">
-  [er_breadcrumbs]
-  <span class="er-socials-support">
-    <a class="er-header-icon" href="/this-site/site-overview/">
-      <img src="/wp-content/uploads/2026/11/site-map-white.svg" alt="" width="20" height="20" loading="lazy"/>
-      <span class="er-header-label">Site Overview</span>
-    </a>
-    <a class="er-header-icon" href="/this-site/site-reach/">
-      <img src="/wp-content/uploads/2026/11/map-location-dot-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-      <span class="er-header-label">Site Reach</span>
-    </a>
-    <a class="er-header-icon" href="/this-site/site-journey/">
-      <img src="/wp-content/uploads/2026/11/route-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-      <span class="er-header-label">Site Journey</span>
-    </a>
-  </span>
-</div>
-
-<footer id="footer" class="flex-container" style="padding-top: 15px;">
+<footer id="footer" class="flex-container">
+  
+  <!-- TOP ROW: breadcrumbs (same [er_breadcrumbs] as the Hero) + Site Links -->
+  <div class="er-footer-toprow">
+    [er_breadcrumbs]
+    <span class="er-socials-support">
+      <a class="er-header-icon" href="/this-site/site-overview/">
+        <img src="/wp-content/uploads/2026/11/site-map-white.svg" alt="" width="20" height="20" loading="lazy"/>
+        <span class="er-header-label">Site Overview</span>
+      </a>
+      <a class="er-header-icon" href="/this-site/site-reach/">
+        <img src="/wp-content/uploads/2026/11/map-location-dot-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+        <span class="er-header-label">Site Reach</span>
+      </a>
+      <a class="er-header-icon" href="/this-site/site-journey/">
+        <img src="/wp-content/uploads/2026/11/route-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+        <span class="er-header-label">Site Journey</span>
+      </a>
+    </span>
+  </div>
+  
   <!-- FOOTER LEFT -->
   <div class="flex-item-footer-left">
     <div class="qr-and-links-wrapper">
@@ -117,6 +115,7 @@
       <p class="site-updates-text"><a href="/this-site/site-updates/">Site Updates</a> to stay tuned<br/>for the latest <span class="content-text"><span style="--i:0">content</span><span style="--i:1" aria-hidden="true">blog posts</span><span style="--i:2" aria-hidden="true">traits</span><span style="--i:3" aria-hidden="true">projects</span><span style="--i:4" aria-hidden="true">topics</span><span style="--i:5" aria-hidden="true">galleries</span><span style="--i:6" aria-hidden="true">RSS feeds</span><span style="--i:7" aria-hidden="true">pages</span><span style="--i:8" aria-hidden="true">things</span><span style="--i:9" aria-hidden="true">visitors</span><span style="--i:10" aria-hidden="true">quotes</span></span></p>
     </div>
   </div>
+  
   <!-- FOOTER SECOND ROW -->
   <div style="padding-top: 25px;">
     [merged_tag_cloud taxonomies="category, topics, things" class="tag-cloud-footer" separator="|"]
