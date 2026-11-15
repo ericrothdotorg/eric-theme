@@ -1,25 +1,15 @@
 <!-- wp:html -->
 
-<footer id="footer" class="flex-container">
+<!-- Rows: top row, columns, tag cloud. Spacing comes only from the containers (Eric Companion CSS §D, tokens);
+     a column's direct children are its rows, so anything moved in gets the same spacing. -->
+<footer id="footer" class="er-footer">
   
-  <!-- TOP ROW: Breadcrumbs (same [er_breadcrumbs] as the Hero) + Site Links -->
+  <!-- TOP ROW: Breadcrumbs (same [er_breadcrumbs] as the Hero) -->
   <div class="er-footer-toprow">
     [er_breadcrumbs]
-    <span class="er-socials-support">
-      <a class="er-header-icon" href="/this-site/site-overview/">
-        <img src="/wp-content/uploads/2026/11/site-map-white.svg" alt="" width="20" height="20" loading="lazy"/>
-        <span class="er-header-label">Overview</span>
-      </a>
-      <a class="er-header-icon" href="/this-site/site-reach/">
-        <img src="/wp-content/uploads/2026/11/map-location-dot-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-        <span class="er-header-label">Reach</span>
-      </a>
-      <a class="er-header-icon" href="/this-site/site-journey/">
-        <img src="/wp-content/uploads/2026/11/route-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-        <span class="er-header-label">Journey</span>
-      </a>
-    </span>
   </div>
+  
+  <div class="er-footer-columns">
   
   <!-- FOOTER LEFT -->
   <div class="flex-item-footer-left">
@@ -51,6 +41,7 @@
   <!-- FOOTER MIDDLE -->
   <nav class="flex-item-footer-middle" aria-label="Footer navigation">
     <!-- START Dropdown Menu -->
+    <div class="er-footer-menu">
     <div class="dropdown" tabindex="0">
       <a href="/about-me/">About Me</a><span class="dropdown-separator" aria-hidden="true">|</span>
         <div class="dropdown-content">
@@ -90,6 +81,7 @@
           <a href="/this-site/site-updates/">Site Updates</a>
         </div>
     </div>
+    </div>
     <!-- END Dropdown Menu -->
     <div class="logo-copyright-wrapper">
       <a href="/" title="Home | Start Over" aria-label="Return to Home"><img src="/wp-content/uploads/2024/03/Site-Logo.png" class="site-logo" alt="Eric Roth logo" width="50" height="50" loading="lazy"/></a>
@@ -99,9 +91,21 @@
   
   <!-- FOOTER RIGHT -->
   <div class="flex-item-footer-right">
-    <!-- wp:shortcode -->
-	[er_socials_support]
-	<!-- /wp:shortcode -->
+    <!-- Site Links (Socials + Support are in the header) -->
+    <span class="er-socials-support">
+      <a class="er-header-icon" href="/this-site/site-overview/">
+        <img src="/wp-content/uploads/2026/11/site-map-white.svg" alt="" width="20" height="20" loading="lazy"/>
+        <span class="er-header-label">Overview</span>
+      </a>
+      <a class="er-header-icon" href="/this-site/site-reach/">
+        <img src="/wp-content/uploads/2026/11/map-location-dot-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+        <span class="er-header-label">Reach</span>
+      </a>
+      <a class="er-header-icon" href="/this-site/site-journey/">
+        <img src="/wp-content/uploads/2026/11/route-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+        <span class="er-header-label">Journey</span>
+      </a>
+    </span>
     <div class="site-updates-wrapper">
       <!-- START Toggle Switch -->
       <div class="flex-container" id="dark-mode-toggle-btn" title="Dark | Light">
@@ -116,8 +120,10 @@
     </div>
   </div>
   
-  <!-- FOOTER SECOND ROW -->
-  <div style="padding-top: 25px;">
+  </div>
+  
+  <!-- TAG CLOUD -->
+  <div class="er-footer-tags">
     [merged_tag_cloud taxonomies="category, topics, things" class="tag-cloud-footer" separator="|"]
   </div>
 </footer>
