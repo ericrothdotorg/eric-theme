@@ -212,19 +212,19 @@ label {
     --er-table-pad-compact: 0.1em;    /* table-compact opt-in */
     --er-table-pad-roomy:   0.5em;    /* table-roomy opt-in */
 
-	/* ---- TYPE SCALE — single source of truth for every font-size ----
-	   Fluid (clamp) so the whole site scales together. Every font-size in
-	   style.css, the companion snippet, and My Quotes references a step here;
-	   no raw literals remain. Relationships (cite < body) use calc() so they
-	   hold at every viewport and survive any rescale. */
-	--er-fs-xs:   clamp(0.8125rem, 0.2vw + 0.78rem, 0.875rem);  /* meta, page-links, filter tabs, see-all */
-	--er-fs-sm:   clamp(0.9rem,   0.2vw + 0.86rem, 1rem);       /* tag cloud, small UI */
-	--er-fs-body: clamp(1rem,     0.4vw + 0.92rem, 1.05rem);    /* ALL body + ALL static quote text, summaries */
-	--er-fs-cite: calc(var(--er-fs-body) * 0.92);               /* cite - always a step under its quote */
-	--er-fs-md:   clamp(1.1rem,   0.4vw + 1rem,    1.25rem);    /* figcaptions, card titles */
-	--er-fs-lg:   clamp(1.05rem,  1vw + 0.8rem,    1.25rem);    /* slider quote - deliberate bigger fluid step */
-	--er-fs-xl:   clamp(1.5rem,   2vw + 1rem,      1.875rem);   /* site title, section display */
-	--er-fs-xxl:  clamp(1.875rem, 3vw + 1.1rem,    2.5rem);     /* large display numbers, hero statements */
+	/* ---- TYPE SCALE — aliases of the theme.json font-size presets ----
+	   The scale itself lives in theme.json (settings.typography.fontSizes):
+	   x-small 12 | small 14 | default 16 | medium 18-20 | large 20-24 |
+	   x-large 24-28 | xx-large 28-32 | xxx-large 32-40 px (phone-wide).
+	   These names stay so snippets and content need no change. */
+	--er-fs-xs:   var(--wp--preset--font-size--x-small);    /* meta, page-links, filter tabs, see-all */
+	--er-fs-sm:   var(--wp--preset--font-size--small);      /* tag cloud, small UI, breadcrumbs */
+	--er-fs-body: 1rem;                                     /* ALL body + ALL static quote text, summaries (= Default) */
+	--er-fs-cite: var(--wp--preset--font-size--small);      /* cite */
+	--er-fs-md:   var(--wp--preset--font-size--medium);     /* figcaptions, card titles */
+	--er-fs-lg:   var(--wp--preset--font-size--large);      /* stat values on phones, a11y panel title */
+	--er-fs-xl:   var(--wp--preset--font-size--x-large);    /* site title, stat values, section display */
+	--er-fs-xxl:  var(--wp--preset--font-size--xx-large);   /* large display numbers */
 
 	/* ---- Line height ---- */
 	--er-lh-tight: 1.3;    /* headings, card/widget titles */
@@ -533,7 +533,7 @@ body.dark-mode option {
    MY QUOTES feature (slider, [quote_text], .single-my-quotes) -> My Quotes PHP snippet.
    ============================================================ */
 
-.wp-block-quote {position: relative; width: 85%; max-width: fit-content; margin: 35px auto 70px; padding: 0 25px; border-inline-start: 3px solid var(--color-5) !important; border-right: 3px solid var(--color-5) !important; border-radius: 10px; font-size: var(--wp--preset--font-size--medium); font-weight: 500;}
+.wp-block-quote {position: relative; width: 85%; max-width: fit-content; margin: 35px auto 70px; padding: 0 25px; border-inline-start: 3px solid var(--color-5) !important; border-right: 3px solid var(--color-5) !important; border-radius: 10px; font-size: var(--wp--preset--font-size--large); font-weight: 500;}
 .wp-block-quote p, .wp-block-quote ul, .wp-block-quote li {text-align: justify; hyphens: manual; font-family: var(--er-ff-quote); font-style: italic; color: var(--er-green); line-height: var(--er-lh-loose);}
 .wp-block-quote p, .wp-block-quote ul, .wp-block-quote li {font-size: var(--er-fs-body);}
 .wp-block-quote cite {position: absolute; top: calc(100% - 1.25em); right: 30px; font-family: var(--er-ff-cite); font-size: var(--er-fs-cite); font-style: normal; color: var(--color-9);}
@@ -554,7 +554,7 @@ body.dark-mode figure.wp-block-pullquote {background: var(--color-10); border: 1
 .wp-block-pullquote blockquote {border-inline-start: none !important; padding-bottom: 1em;}
 .wp-block-pullquote blockquote p, .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {margin-left: 25px; text-align: left; hyphens: manual; font-family: var(--er-ff-quote); font-style: italic; color: var(--er-green); line-height: var(--er-lh-loose);}
 .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {margin-left: 0;} /* lists: no extra left margin, bullets already indent */
-.wp-block-pullquote blockquote p, .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {font-size: var(--wp--preset--font-size--medium);} /* core/pullquote size = medium (1.65rem), pinned here on purpose */
+.wp-block-pullquote blockquote p, .wp-block-pullquote blockquote ul, .wp-block-pullquote blockquote li {font-size: var(--wp--preset--font-size--large);} /* core/pullquote size = large, pinned here on purpose */
 .wp-block-pullquote blockquote cite {display: block; text-align: right; margin-top: 0.75em; margin-right: 25px; font-family: var(--er-ff-cite); font-size: var(--er-fs-cite); font-style: normal;}
 
 /* ============================================================
@@ -675,7 +675,7 @@ body.rtl .wp-block-navigation__responsive-container.is-menu-open .wp-block-navig
 /* Mobile menu links */
 .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item__content {
 	width: 100%;
-	font-size: var(--wp--preset--font-size--base);
+	font-size: var(--wp--preset--font-size--medium);
 	padding: 15px 60px 15px 15px;
 	border-radius: 5px;
 }
@@ -1005,7 +1005,7 @@ body.rtl .wp-block-navigation__responsive-container.is-menu-open .wp-block-navig
 /* ---- Hero text over the dimmed image (black box) ---- */
 .er-hero-section.has-background-dim .page-title,
 .er-hero-section.has-background-dim .page-description { color: var(--color-8); }
-.er-hero-section .page-title {font-size: clamp(1.6rem, 4vw, 2rem); line-height: 1.1;} /* fluid, scales down on small screens */
+.er-hero-section .page-title {font-size: var(--wp--preset--font-size--x-large); line-height: 1.1;}
 
 /* NOTE: ".has-background-dim" is WordPress's cover-block class, reused here only
    as a "hero has an image" flag — NOT an overlay over the image. The sole dim in
