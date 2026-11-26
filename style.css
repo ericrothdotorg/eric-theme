@@ -217,7 +217,7 @@ label {
 	   x-small 12 | small 14 | default 16 | medium 18-20 | large 20-24 |
 	   x-large 24-28 | xx-large 28-32 | xxx-large 32-40 px (phone-wide).
 	   These names stay so snippets and content need no change. */
-	--er-fs-xs:   var(--wp--preset--font-size--x-small);    /* meta, page-links, filter tabs, see-all */
+	--er-fs-xs:   var(--wp--preset--font-size--small);      /* meta, page-links, filter tabs, see-all (= small; x-small 12 px is editor-only) */
 	--er-fs-sm:   var(--wp--preset--font-size--small);      /* tag cloud, small UI, breadcrumbs */
 	--er-fs-body: 1rem;                                     /* ALL body + ALL static quote text, summaries (= Default) */
 	--er-fs-cite: var(--wp--preset--font-size--small);      /* cite */
