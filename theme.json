@@ -402,67 +402,61 @@
 			],
 			"fontSizes": [
 				{
-					"fluid": {
-						"min": ".825rem",
-						"max": ".95rem"
-					},
-					"size": ".95rem",
+					"fluid": false,
+					"size": ".75rem",
 					"slug": "x-small",
-					"name": "Extra Small"
+					"name": "X-Small"
 				},
 				{
-					"fluid": {
-						"min": ".9rem",
-						"max": "1.05rem"
-					},
-					"size": "1.05rem",
+					"fluid": false,
+					"size": ".875rem",
 					"slug": "small",
 					"name": "Small"
 				},
 				{
 					"fluid": {
-						"min": "1rem",
-						"max": "1.165rem"
+						"min": "1.125rem",
+						"max": "1.25rem"
 					},
-					"size": "1.165rem",
-					"slug": "base",
-					"name": "Base"
-				},
-				{
-					"fluid": {
-						"min": "1.2rem",
-						"max": "1.65rem"
-					},
-					"size": "1.65rem",
+					"size": "1.25rem",
 					"slug": "medium",
 					"name": "Medium"
 				},
 				{
 					"fluid": {
-						"min": "1.5rem",
-						"max": "2.35rem"
+						"min": "1.25rem",
+						"max": "1.5rem"
 					},
-					"size": "2.35rem",
+					"size": "1.5rem",
 					"slug": "large",
 					"name": "Large"
 				},
 				{
 					"fluid": {
-						"min": "1.875rem",
-						"max": "2.9rem"
+						"min": "1.5rem",
+						"max": "1.75rem"
 					},
-					"size": "2.9rem",
+					"size": "1.75rem",
 					"slug": "x-large",
-					"name": "Extra Large"
+					"name": "X-Large"
 				},
 				{
 					"fluid": {
-						"min": "2.25rem",
-						"max": "3.75rem"
+						"min": "1.75rem",
+						"max": "2rem"
 					},
-					"size": "3.75rem",
+					"size": "2rem",
 					"slug": "xx-large",
-					"name": "Extra Extra Large"
+					"name": "XX-Large"
+				},
+				{
+					"fluid": {
+						"min": "2rem",
+						"max": "2.5rem"
+					},
+					"size": "2.5rem",
+					"slug": "xxx-large",
+					"name": "XXX-Large"
 				}
 			],
 			"lineHeight": true,
@@ -518,7 +512,7 @@
 					"link": {
 						"typography": {
 							"textDecoration": "none",
-							"fontSize": "var(--wp--preset--font-size--base)"
+							"fontSize": "var(--wp--preset--font-size--medium)"
 						}
 					}
 				}
@@ -573,7 +567,7 @@
 						}
 					}
 				},
-				"css": "& .comment-reply-title { font-size: var(--wp--preset--font-size--base) }"
+				"css": "& .comment-reply-title { font-size: var(--wp--preset--font-size--medium) }"
 			},
 			"core/details": {
 				"css": ".wp-block-details summary { font-weight: 600 }"
@@ -618,7 +612,7 @@
 				"elements": {
 					"h2": {
 						"typography": {
-							"fontSize": "var(--wp--preset--font-size--medium)"
+							"fontSize": "var(--wp--preset--font-size--large)"
 						}
 					}
 				},
@@ -696,7 +690,7 @@
 				},
 				"typography": {
 					"lineHeight": "var(--wp--custom--line-height--body)",
-					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontSize": "var(--wp--preset--font-size--large)",
 					"fontWeight": "500"
 				}
 			},
@@ -751,7 +745,7 @@
 			},
 			"core/site-title": {
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--base)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
 					"fontWeight": "600",
 					"lineHeight": "var(--wp--custom--line-height--none)",
 					"letterSpacing": "0"
@@ -795,7 +789,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "0.9375rem",
+					"fontSize": "var(--wp--preset--font-size--small)",
 					"fontWeight": "500"
 				},
 				":hover": {
@@ -807,34 +801,34 @@
 			},
 			"h1": {
 				"typography": {
-					"fontSize": "clamp(1.95rem, 1.4vw + 1.6rem, 2.5rem)",
+					"fontSize": "var(--wp--preset--font-size--xxx-large)",
 					"lineHeight": "var(--wp--custom--line-height--snug)"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontSize": "clamp(1.75rem, 1.1vw + 1.45rem, 2.1875rem)",
+					"fontSize": "var(--wp--preset--font-size--xx-large)",
 					"lineHeight": "var(--wp--custom--line-height--snug)"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontSize": "clamp(1.55rem, 0.9vw + 1.3rem, 1.875rem)"
+					"fontSize": "var(--wp--preset--font-size--x-large)"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontSize": "clamp(1.35rem, 0.6vw + 1.15rem, 1.5625rem)"
+					"fontSize": "var(--wp--preset--font-size--large)"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontSize": "clamp(1.15rem, 0.4vw + 1.02rem, 1.25rem)"
+					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontSize": "clamp(1.05rem, 0.2vw + 1rem, 1.1rem)"
+					"fontSize": "var(--er-fs-body)"
 				}
 			},
 			"heading": {
