@@ -3,125 +3,125 @@
 <!-- Rows: top row, columns, tag cloud. Spacing comes only from the containers (Eric Companion CSS §D, tokens);
      a column's direct children are its rows, so anything moved in gets the same spacing. -->
 <footer id="footer" class="er-footer">
-  
+
   <!-- TOP ROW: Breadcrumbs (same [er_breadcrumbs] as the Hero) -->
   <div class="er-footer-toprow">
     [er_breadcrumbs]
   </div>
-  
+
   <div class="er-footer-columns">
-  
-  <!-- FOOTER LEFT -->
-  <div class="flex-item-footer-left">
-    <div class="qr-and-links-wrapper">
-      <img src="/wp-content/uploads/2024/03/QR-Code.png" alt="QR Code linking to ericroth.org" title="ericroth.org | Scan Me" width="100" height="100" loading="lazy"/>
-      <div class="qr-links-column">
-        <a href="/services/" class="ninja-services-link">
-          <img src="/wp-content/uploads/2025/12/ninja-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-          <span>Ninja Services</span>
+
+    <!-- FOOTER LEFT -->
+    <div class="flex-item-footer-left">
+      <div class="qr-and-links-wrapper">
+        <img src="/wp-content/uploads/2024/03/QR-Code.png" alt="QR Code linking to ericroth.org" title="ericroth.org | Scan Me" width="100" height="100" loading="lazy"/>
+        <div class="qr-links-column">
+          <a href="/services/" class="ninja-services-link">
+            <img src="/wp-content/uploads/2025/12/ninja-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+            <span>Ninja Services</span>
+          </a>
+          <!-- START Toggle Switch -->
+          <div class="flex-container" id="tts-toggle-btn" title="Mute | Unmute">
+            <img src="/wp-content/uploads/2025/04/volume-xmark-solid-white.svg" alt="" width="20" height="18" aria-hidden="true" loading="lazy"/>
+            <input type="checkbox" id="tts-toggle-switch" aria-label="Enable text-to-speech" />
+            <span class="toggle-visual" aria-hidden="true"></span>
+            <img src="/wp-content/uploads/2025/04/volume-high-solid-white.svg" alt="" width="20" height="16" aria-hidden="true" loading="lazy"/>
+          </div>
+          <div id="tts-status" aria-live="polite" class="tts-toggle-btn-accessibility-label"></div>
+          <!-- END Toggle Switch -->
+          <!-- Opens the cookie notice again (Site Essentials & Cookies) -->
+          <a href="#cookie-settings" class="cookies-link">
+            <img src="/wp-content/uploads/2026/11/cookie-bite-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+            <span>Cookies</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER MIDDLE -->
+    <nav class="flex-item-footer-middle" aria-label="Footer navigation">
+      <!-- START Dropdown Menu -->
+      <div class="er-footer-menu">
+        <div class="dropdown" tabindex="0">
+          <a href="/about-me/">About Me</a><span class="dropdown-separator" aria-hidden="true">|</span>
+          <div class="dropdown-content">
+            <a href="/about-me/contact/">Contact</a><br />
+            <a href="/about-me/endorsemonials/">Endorsemonials</a><br />
+            <a href="/about-me/faqs/">FAQs</a><br />
+            <a href="/about-me/my-quotes/">My Quotes</a>
+          </div>
+        </div>
+        <div class="dropdown" tabindex="0">
+          <a href="/personal/">Personal</a><span class="dropdown-separator" aria-hidden="true">|</span>
+          <div class="dropdown-content">
+            <a href="/personal/my-blog/">My Blog</a><br />
+            <a href="/personal/my-interests/">My Interests</a><br />
+            <a href="/personal/my-media/">My Media</a><br />
+            <a href="/personal/my-world/">My World</a>
+          </div>
+        </div>
+        <div class="dropdown" tabindex="0">
+          <a href="/professional/">Professional</a><span class="dropdown-separator" aria-hidden="true">|</span>
+          <div class="dropdown-content">
+            <a href="/professional/my-availability/">My Availability</a><br />
+            <a href="/professional/my-background/">My Background</a><br />
+            <a href="/professional/my-compass/">My Compass</a><br />
+            <a href="/professional/my-publications/">My Publications</a>
+          </div>
+        </div>
+        <div class="dropdown" tabindex="0">
+          <a href="/this-site/">This Site</a>
+          <div class="dropdown-content">
+            <a href="/this-site/site-accessibility/">Site Accessibility</a><br />
+            <a href="/this-site/site-composition/">Site Composition</a><br />
+            <a href="/this-site/site-journey/">Site Journey</a><br />
+            <a href="/this-site/site-overview/">Site Overview</a><br />
+            <a href="/this-site/site-policies/">Site Policies</a><br />
+            <a href="/this-site/site-reach/">Site Reach</a><br />
+            <a href="/this-site/site-updates/">Site Updates</a>
+          </div>
+        </div>
+      </div>
+      <!-- END Dropdown Menu -->
+      <div class="logo-copyright-wrapper">
+        <a href="/" title="Home | Start Over" aria-label="Return to Home"><img src="/wp-content/uploads/2024/03/Site-Logo.png" class="site-logo" alt="Eric Roth logo" width="50" height="50" loading="lazy"/></a>
+        <p class="copyright-text">Another thing from <a href="/about-me/">Eric Roth</a><br />Copyright © 2017-<span id="current-year"></span></p>
+      </div>
+    </nav>
+
+    <!-- FOOTER RIGHT -->
+    <div class="flex-item-footer-right">
+      <!-- Site Links (Socials + Support are in the header) -->
+      <span class="er-socials-support">
+        <a class="er-header-icon" href="/this-site/site-overview/">
+          <img src="/wp-content/uploads/2026/11/site-map-white.svg" alt="" width="20" height="20" loading="lazy"/>
+          <span class="er-header-label">Overview</span>
         </a>
+        <a class="er-header-icon" href="/this-site/site-reach/">
+          <img src="/wp-content/uploads/2026/11/map-location-dot-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+          <span class="er-header-label">Reach</span>
+        </a>
+        <a class="er-header-icon" href="/this-site/site-journey/">
+          <img src="/wp-content/uploads/2026/11/route-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
+          <span class="er-header-label">Journey</span>
+        </a>
+      </span>
+      <div class="site-updates-wrapper">
         <!-- START Toggle Switch -->
-        <div class="flex-container" id="tts-toggle-btn" title="Mute | Unmute">
-          <img src="/wp-content/uploads/2025/04/volume-xmark-solid-white.svg" alt="" width="20" height="18" aria-hidden="true" loading="lazy"/>
-          <input type="checkbox" id="tts-toggle-switch" aria-label="Enable text-to-speech" />
+        <div class="flex-container" id="dark-mode-toggle-btn" title="Dark | Light">
+          <img src="/wp-content/uploads/2024/03/sun-solid-white.svg" alt="" width="18" height="18" aria-hidden="true" loading="lazy"/>
+          <input type="checkbox" id="change-mode-switch" aria-label="Enable dark mode" />
           <span class="toggle-visual" aria-hidden="true"></span>
-          <img src="/wp-content/uploads/2025/04/volume-high-solid-white.svg" alt="" width="20" height="16" aria-hidden="true" loading="lazy"/>
+          <img src="/wp-content/uploads/2024/03/moon-solid-white.svg" alt="" width="14" height="19" aria-hidden="true" loading="lazy"/>
         </div>
-        <div id="tts-status" aria-live="polite" class="tts-toggle-btn-accessibility-label"></div>
+        <div id="dark-mode-status" aria-live="polite" class="dark-mode-toggle-btn-accessibility-label"></div>
         <!-- END Toggle Switch -->
-        <!-- Opens the cookie notice again (Site Essentials & Cookies) -->
-        <a href="#cookie-settings" class="cookies-link">
-          <img src="/wp-content/uploads/2026/11/cookie-bite-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-          <span>Cookies</span>
-        </a>
+        <p class="site-updates-text"><a href="/this-site/site-updates/" class="er-header-icon"><img src="/wp-content/uploads/2026/11/tower-broadcast-solid-white.svg" alt="" width="20" height="20" aria-hidden="true" loading="lazy"/><span class="er-header-label">Updates</span></a> to stay tuned<br/>for the latest <span class="content-text"><span style="--i:0">content</span><span style="--i:1" aria-hidden="true">blog posts</span><span style="--i:2" aria-hidden="true">traits</span><span style="--i:3" aria-hidden="true">projects</span><span style="--i:4" aria-hidden="true">topics</span><span style="--i:5" aria-hidden="true">galleries</span><span style="--i:6" aria-hidden="true">RSS feeds</span><span style="--i:7" aria-hidden="true">pages</span><span style="--i:8" aria-hidden="true">things</span><span style="--i:9" aria-hidden="true">visitors</span><span style="--i:10" aria-hidden="true">quotes</span></span></p>
       </div>
     </div>
+
   </div>
-  
-  <!-- FOOTER MIDDLE -->
-  <nav class="flex-item-footer-middle" aria-label="Footer navigation">
-    <!-- START Dropdown Menu -->
-    <div class="er-footer-menu">
-    <div class="dropdown" tabindex="0">
-      <a href="/about-me/">About Me</a><span class="dropdown-separator" aria-hidden="true">|</span>
-        <div class="dropdown-content">
-          <a href="/about-me/contact/">Contact</a><br />
-          <a href="/about-me/endorsemonials/">Endorsemonials</a><br />
-          <a href="/about-me/faqs/">FAQs</a><br />
-          <a href="/about-me/my-quotes/">My Quotes</a>
-        </div>
-    </div>
-    <div class="dropdown" tabindex="0">
-      <a href="/personal/">Personal</a><span class="dropdown-separator" aria-hidden="true">|</span>
-        <div class="dropdown-content">
-          <a href="/personal/my-blog/">My Blog</a><br />
-          <a href="/personal/my-interests/">My Interests</a><br />
-          <a href="/personal/my-media/">My Media</a><br />
-          <a href="/personal/my-world/">My World</a>
-        </div>
-    </div>
-    <div class="dropdown" tabindex="0">
-      <a href="/professional/">Professional</a><span class="dropdown-separator" aria-hidden="true">|</span>
-        <div class="dropdown-content">
-          <a href="/professional/my-availability/">My Availability</a><br />
-          <a href="/professional/my-background/">My Background</a><br />
-          <a href="/professional/my-compass/">My Compass</a><br />
-          <a href="/professional/my-publications/">My Publications</a>
-        </div>
-    </div>
-    <div class="dropdown" tabindex="0">
-      <a href="/this-site/">This Site</a>
-        <div class="dropdown-content">
-          <a href="/this-site/site-accessibility/">Site Accessibility</a><br />
-          <a href="/this-site/site-composition/">Site Composition</a><br />
-          <a href="/this-site/site-journey/">Site Journey</a><br />
-          <a href="/this-site/site-overview/">Site Overview</a><br />
-          <a href="/this-site/site-policies/">Site Policies</a><br />
-          <a href="/this-site/site-reach/">Site Reach</a><br />
-          <a href="/this-site/site-updates/">Site Updates</a>
-        </div>
-    </div>
-    </div>
-    <!-- END Dropdown Menu -->
-    <div class="logo-copyright-wrapper">
-      <a href="/" title="Home | Start Over" aria-label="Return to Home"><img src="/wp-content/uploads/2024/03/Site-Logo.png" class="site-logo" alt="Eric Roth logo" width="50" height="50" loading="lazy"/></a>
-      <p class="copyright-text">Another thing from <a href="/about-me/">Eric Roth</a><br />Copyright © 2017-<span id="current-year"></span></p>
-    </div>
-  </nav>
-  
-  <!-- FOOTER RIGHT -->
-  <div class="flex-item-footer-right">
-    <!-- Site Links (Socials + Support are in the header) -->
-    <span class="er-socials-support">
-      <a class="er-header-icon" href="/this-site/site-overview/">
-        <img src="/wp-content/uploads/2026/11/site-map-white.svg" alt="" width="20" height="20" loading="lazy"/>
-        <span class="er-header-label">Overview</span>
-      </a>
-      <a class="er-header-icon" href="/this-site/site-reach/">
-        <img src="/wp-content/uploads/2026/11/map-location-dot-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-        <span class="er-header-label">Reach</span>
-      </a>
-      <a class="er-header-icon" href="/this-site/site-journey/">
-        <img src="/wp-content/uploads/2026/11/route-solid-white.svg" alt="" width="20" height="20" loading="lazy"/>
-        <span class="er-header-label">Journey</span>
-      </a>
-    </span>
-    <div class="site-updates-wrapper">
-      <!-- START Toggle Switch -->
-      <div class="flex-container" id="dark-mode-toggle-btn" title="Dark | Light">
-        <img src="/wp-content/uploads/2024/03/sun-solid-white.svg" alt="" width="18" height="18" aria-hidden="true" loading="lazy"/>
-        <input type="checkbox" id="change-mode-switch" aria-label="Enable dark mode" />
-        <span class="toggle-visual" aria-hidden="true"></span>
-        <img src="/wp-content/uploads/2024/03/moon-solid-white.svg" alt="" width="14" height="19" aria-hidden="true" loading="lazy"/>
-      </div>
-      <div id="dark-mode-status" aria-live="polite" class="dark-mode-toggle-btn-accessibility-label"></div>
-      <!-- END Toggle Switch -->
-      <p class="site-updates-text"><img src="/wp-content/uploads/2026/11/tower-broadcast-solid-white.svg" alt="" width="20" height="20" aria-hidden="true" loading="lazy"/><span><a href="/this-site/site-updates/">Updates</a> to stay tuned<br/>for the latest <span class="content-text"><span style="--i:0">content</span><span style="--i:1" aria-hidden="true">blog posts</span><span style="--i:2" aria-hidden="true">traits</span><span style="--i:3" aria-hidden="true">projects</span><span style="--i:4" aria-hidden="true">topics</span><span style="--i:5" aria-hidden="true">galleries</span><span style="--i:6" aria-hidden="true">RSS feeds</span><span style="--i:7" aria-hidden="true">pages</span><span style="--i:8" aria-hidden="true">things</span><span style="--i:9" aria-hidden="true">visitors</span><span style="--i:10" aria-hidden="true">quotes</span></span></span></p>
-    </div>
-  </div>
-  
-  </div>
-  
+
   <!-- TAG CLOUD -->
   <div class="er-footer-tags">
     [merged_tag_cloud taxonomies="category, topics, things" class="tag-cloud-footer" separator="|"]
