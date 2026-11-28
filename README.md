@@ -49,6 +49,7 @@ This is the theme of one particular site, shared as it is. Use it, take it apart
 - **Start with the theme:** Upload it and it runs. Layout, design tokens and CSS are all there, ready to explore or build on. Shortcodes from the snippets show as plain text until you add them. Footer and sidebar still carry this site's links and images, so swap in your own.
 - **Get the full picture:** Add the [Display Posts  ↗](https://displayposts.com/) plugin and a few [snippets](https://github.com/ericrothdotorg/eric-snippets): *"Eric Companion PHP"*, *"Eric Companion CSS"*, *"Display Posts - Bill Erickson"*, *"Site Essentials & Cookies"* and *"CPTs & Taxonomies"*. That brings in the heroes, archives, related posts and the custom post types.
 - **Make it yours:** Pick your own menu for the Navigation block in the Site Editor and set a static front page under Settings → Reading.
+- **Edit the files, not the Site Editor:** The theme is file-based. Change templates and parts in `templates/` and `parts/`, styles in `theme.json`, `style.css` and `assets/styles/`. Don't save templates, parts or styles in Appearance → Editor: WordPress then stores a copy in the database that silently overrides the file, and later file changes no longer show. If that happened, reset the template in the Site Editor (⋮ → Reset) to fall back to the file. Fine to edit there: synced patterns and navigation menus, because they have no file form.
 
 ---
 
