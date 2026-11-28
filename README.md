@@ -50,7 +50,7 @@ This is the theme of one particular site, shared as it is. Use it, take it apart
 - **Get the full picture:** Add the [Display Posts  ↗](https://displayposts.com/) plugin and a few [snippets](https://github.com/ericrothdotorg/eric-snippets): *"Eric Companion PHP"*, *"Eric Companion CSS"*, *"Display Posts - Bill Erickson"*, *"Site Essentials & Cookies"* and *"CPTs & Taxonomies"*. That brings in the heroes, archives, related posts and the custom post types.
 - **Make it yours:** Set a static front page under Settings → Reading. For the menu, create one in Appearance → Editor → Navigation and note its ID (the number at the end of the URL when the menu is open). Then open `parts/header.html` and replace `"ref":158986` with your ID.
 - **Edit the files, not the Site Editor:** The theme is file-based. Templates and parts live in `templates/` and `parts/`, styles in `theme.json`, `style.css` and `assets/styles/`. Change them there.
-  Don't save templates, parts or styles in Appearance → Editor. WordPress would store a copy in the database, and that copy silently wins over the file. If it already happened, reset it in the Site Editor: Templates and parts via ⋮ → Reset, styles via Styles → ⋮ → Reset.
+  Don't save templates, parts or styles in Appearance → Editor. WordPress would store a copy in the database, and that copy silently wins over the file. If it already happened, reset it in the Site Editor: Templates and parts via ⋮ → Reset and styles via Styles → ⋮ → Reset.
   Fine to edit in the Site Editor: Synced patterns and the links in your navigation menus. They only exist in the database anyway.
 
 ---
